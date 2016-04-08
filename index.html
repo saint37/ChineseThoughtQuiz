@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection"content="telephone=no, email=no" />
+
+<title>ChineseThought Quiz</title>
+
+<link rel="stylesheet" type="text/css" href="style.css" />
+
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="quiz.js"></script>
+<script type="text/javascript">
+var init={'questions':[
+	{'question':'“不学《诗》，无以言”出自：','answers':['《诗经》','《论语》','《诗品》','《毛诗序》'],'correctAnswer':2},
+	{'question':'下列选项中，与“厚德载物”内在精神一致的是：','answers':['人定胜天','天人之分','民胞物与','物竞天择'],'correctAnswer':3},
+	{'question':'“般若”的正确读音应是：','answers':['bān ruó','bō rě','pán ruó','bō ruó'],'correctAnswer':2},
+	{'question':'如果唐代也有“朋友圈”，当李白在他的“朋友圈”发布新诗时，以下哪位诗人不可能出现在他的点赞名单中？','answers':['贺知章','杜甫','汪伦','王勃'],'correctAnswer':4},
+	{'question':'赋比兴是《诗经》创作的三种表现手法。下列歌词若放入诗经，属于“兴”的是：','answers':['我能想到最浪漫的事，就是和你一起慢慢变老。','你问我爱你有多深，月亮代表我的心。','天青色等烟雨，而我在等你。','我就是我，是颜色不一样的烟火。'],'correctAnswer':3},
+	{'question':'以下哪句诗中出现的颜色最少？','answers':['春来江水绿如蓝','白毛浮绿水','半江瑟瑟半江红','两个黄鹂鸣翠柳'],'correctAnswer':1}
+]};
+
+$(function(){
+	$('#quiz-container').jquizzy({
+        questions: init.questions
+    });
+});
+</script>
+</head>
+
+<body>
+
+<div class="wrap">
+	<div id='quiz-container'></div>
+</div>
+
+
+</body>
+</html>
