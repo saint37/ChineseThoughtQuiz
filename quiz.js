@@ -23,7 +23,7 @@
         }
         var superContainer = $(this),
         answers = [],
-        introFob = '<div class="intro-container slide-container animated flipInY"><div class="nav-start animated flash" href="#"></div></div>	',
+        introFob = '<div class="intro-container slide-container animated fadeInDown"><div class="nav-start animated flash" href="#"></div></div>	',
         exitFob = '<div class="-container slide-container"><div class="question-number">' + config.endText + '</div><div class="result-keeper"></div></div><div class="notice">请选择一个选项！</div>',
         contentFob = '',
         questionsIteratorIndex,
