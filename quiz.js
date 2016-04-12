@@ -23,7 +23,7 @@
         }
         var superContainer = $(this),
         answers = [],
-        introFob = '<div class="intro-container slide-container"><div class="nav-start" href="#"></div></div>	',
+        introFob = '<div class="intro-container slide-container animated flipInY"><div class="nav-start animated flash" href="#"></div></div>	',
         exitFob = '<div class="-container slide-container"><div class="question-number">' + config.endText + '</div><div class="result-keeper"></div></div><div class="notice">请选择一个选项！</div>',
         contentFob = '',
         questionsIteratorIndex,
@@ -157,7 +157,7 @@
             }
             score = roundReloaded(trueCount / questionLength * 100, 2);
             
-            resultSet = '<h2 class="qTitle">' + judgeSkills(score) + '<br/> 您的分数： ' + score + '</h2>' + 
+            resultSet = '<h2 class="qTitle animated rubberBand">' + judgeSkills(score) + '<br/> 您的分数： ' + score + '</h2>' + 
                         shareButton + '<div class="jquizzy-clear"></div>' +
                         resultSet + '<div class="jquizzy-clear"></div>'  + '<div class="quit"></div>' + '<div class="jquizzy-clear"></div>';
             superContainer.find('.result-keeper').html(resultSet).show(500);
