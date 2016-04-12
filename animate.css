@@ -1275,6 +1275,8 @@
 .fadeInDown {
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
 }
 
 @-webkit-keyframes fadeInDownBig {
@@ -1986,8 +1988,8 @@
 }
 
 .flipInY {
-  -webkit-backface-visibility: visible !important;
-  backface-visibility: visible !important;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
   -webkit-animation-name: flipInY;
   animation-name: flipInY;
   -webkit-animation-duration: 2s;
